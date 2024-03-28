@@ -1,0 +1,16 @@
+{
+    "description": "Created via prefabSLO.py",
+    "enabled": true,
+    "errorBudgetBurnRate": {
+      "burnRateVisualizationEnabled": true,
+      "fastBurnThreshold": 1.5
+    },
+    "evaluationType": "AGGREGATE",
+    "filter": "type(\"SYNTHETIC_TEST\"), ",
+    "metricExpression": "builtin:synthetic.browser.availability.location.total:splitBy()",
+    "metricName": "_synthetic_availability",
+    "name": " synthetic availability",
+    "target": 95,
+    "timeframe": "-30d",
+    "warning": 97.5
+  }

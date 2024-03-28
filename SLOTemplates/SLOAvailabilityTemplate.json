@@ -1,0 +1,16 @@
+{
+    "description": "Created via prefabSLO.py",
+    "enabled": true,
+    "errorBudgetBurnRate": {
+      "burnRateVisualizationEnabled": true,
+      "fastBurnThreshold": 1.5
+    },
+    "evaluationType": "AGGREGATE",
+    "filter": "type(\"SERVICE\"), ",
+    "metricExpression": "(100)*(builtin:service.errors.server.successCount:splitBy())/(builtin:service.requestCount.server:splitBy())",
+    "metricName": "_availability",
+    "name": " availability",
+    "target": 95,
+    "timeframe": "-30d",
+    "warning": 97.5
+  }

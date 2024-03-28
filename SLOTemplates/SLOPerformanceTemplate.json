@@ -1,0 +1,16 @@
+{
+    "description": "Created via prefabSLO.py",
+    "enabled": true,
+    "errorBudgetBurnRate": {
+      "burnRateVisualizationEnabled": true,
+      "fastBurnThreshold": 1.5
+    },
+    "evaluationType": "AGGREGATE",
+    "filter": "type(\"SERVICE\"), ",
+    "metricExpression": "((builtin:service.response.time:avg:partition(\"latency\",value(\"good\",lt(30000))):splitBy():count:default(0))/(builtin:service.response.time:avg:splitBy():count)*(100)):default(100,always)",
+    "metricName": "_performance",
+    "name": " performance",
+    "target": 95,
+    "timeframe": "-30d",
+    "warning": 97.5
+  }

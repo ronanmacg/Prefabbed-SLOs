@@ -1,0 +1,16 @@
+{
+    "description": "Created via prefabSLO.py",
+    "enabled": true,
+    "errorBudgetBurnRate": {
+      "burnRateVisualizationEnabled": true,
+      "fastBurnThreshold": 1.5
+    },
+    "evaluationType": "AGGREGATE",
+    "filter": "type(\"SERVICE\")",  
+    "metricExpression": "",
+    "metricName": "_overall_performance",
+    "name": " overall performance",
+    "target": 95,
+    "timeframe": "-30d",
+    "warning": 97.5
+  }

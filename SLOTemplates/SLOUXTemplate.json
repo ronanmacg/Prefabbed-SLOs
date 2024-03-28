@@ -1,0 +1,16 @@
+{
+    "description": "Created via prefabSLO.py",
+    "enabled": true,
+    "errorBudgetBurnRate": {
+      "burnRateVisualizationEnabled": true,
+      "fastBurnThreshold": 1.5
+    },
+    "evaluationType": "AGGREGATE",
+    "filter": "type(\"APPLICATION\"), ",
+    "metricExpression": "(100)*(builtin:apps.web.actionCount.category:filter(eq(\"Apdex category\",SATISFIED)):splitBy())/(builtin:apps.web.actionCount.category:splitBy())",
+    "metricName": "_ux",
+    "name": " user experience",
+    "target": 95,
+    "timeframe": "-30d",
+    "warning": 97.5
+  }
