@@ -7,7 +7,7 @@
     },
     "evaluationType": "AGGREGATE",
     "filter": "type(\"SERVICE\"), ",
-    "metricExpression": "((builtin:service.response.time:avg:partition(\"latency\",value(\"good\",lt(30000))):splitBy():count:default(0))/(builtin:service.response.time:avg:splitBy():count)*(100)):default(100,always)",
+    "metricExpression": "((builtin:service.response.time:avg:partition(\"latency\",value(\"good\",lt(30000000))):splitBy():count:default(0))/(builtin:service.response.time:avg:splitBy():count)*(100)):default(100,always)",
     "metricName": "_performance",
     "name": " performance",
     "target": 95,
